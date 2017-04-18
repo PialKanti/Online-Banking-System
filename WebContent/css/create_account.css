@@ -1,0 +1,7 @@
+.account{
+	margin-top: 30px;
+}
+.required:after {
+    content: " *";
+    color: red;
+}

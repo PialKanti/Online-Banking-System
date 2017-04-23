@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Close Account</title>
+<title>Loan</title>
 <link rel="shortcut icon" type="image/png" href="image/favicon.png" />
 <link rel="stylesheet" type="text/css" href="css/deposit.css">
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,49 +21,52 @@
 	<div class="container-fullwidth">
 		<%
 			AccountModel ac = null;
-		%>
-		<%
 			ac = (AccountModel) session.getAttribute("userDetails");
 			if (ac != null) {
 		%>
 		<div class="row" style="margin-top: 50px;">
 			<div class="col-md-4 col-md-offset-4">
-				<form role="form">
-					<h2>Account Close Form</h2>
-					<div class="col-md-12">
-						<hr class="colorgraph">
-					</div>
-					<label class="col-md-4 control-label">Account No</label>
-					<div class="col-sm-8 form-group">
-						<input type="text" value="<%=ac.getAccount_no() %>" required placeholder="Enter Account No.."
-							class="form-control">
-					</div>
-					<label class="col-md-4 control-label">User Name</label>
-					<div class="col-sm-8 form-group">
-						<input type="text" value="<%=ac.getUsername() %>" required placeholder="Enter User Name.."
-							class="form-control">
-					</div>
-
-					<label class="col-md-4 control-label">Password</label>
-					<div class="col-sm-8 form-group">
-						<input type="password" required placeholder="Enter Password.."
-							class="form-control">
-					</div>
-
-					<div class="col-md-12">
-						<hr class="colorgraph">
-					</div>
-					<div class="row col-md-10 col-md-offset-1">
-						<div class="col-xs-6 col-md-6">
-							<input type="submit" value="Submit"
-								class="btn btn-success btn-block btn-md" tabindex="7">
+				<h2>Loan Request</h2>
+				<hr>
+				<div class="col-md-12">
+					<form method="post" action="LoanServlet">
+						<div class="form-group">
+							<label for="input" class="col-sm-4 control-label"> Loan
+								Amount</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<span class="input-group-addon">&#2547;</span> <input
+										type="number" class="form-control input-sm" id="input"
+										Name="loan_amount" placeholder="Enter loan amount"> <input
+										type="hidden" name="account_no"
+										value="<%=ac.getAccount_no()%>" />
+										
+										<input
+										type="hidden" name="first_name"
+										value="<%=ac.getFirst_name()%>" />
+										
+										<input
+										type="hidden" name="last_name"
+										value="<%=ac.getLast_name()%>" />
+										
+										<input
+										type="hidden" name="address"
+										value="<%=ac.getAddress()%>" />
+										
+										<input
+										type="hidden" name="email"
+										value="<%=ac.getEmail()%>" />
+								</div>
+							</div>
 						</div>
-						<div class="col-xs-6 col-md-6">
-							<input class="btn btn-danger btn-block btn-md" type="reset"
-								value="Clear">
+						<div class="form-group">
+							<div class="col-md-offset-4 col-md-12" style="margin-top: 20px;">
+								<input type="submit" class="btn btn-primary btn-lg"
+									value="Submit"></input>
+							</div>
 						</div>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 		</div>
 		<%

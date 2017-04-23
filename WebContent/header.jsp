@@ -9,7 +9,6 @@
 <link rel="stylesheet" type="text/css" href="css/header_css.css">
 </head>
 <div class="container-fullwidth">
-	<!-- Topper w/ logo -->
 	<div class="row hidden-xs topper">
 		<div class="col-xs-7 col-sm-7">
 			<a href="index.jsp"><img am-TopLogo alt="SECUREVIEW"
@@ -66,8 +65,7 @@
 						data-toggle="dropdown">Company <b class="caret"></b></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="about.html">About Us</a></li>
-							<li><a href="careers.html">Careers</a></li>
-							<li><a href="press-release.html">Press Release</a></li>
+							<li><a href="admin_login.jsp">Admin panel</a></li>
 						</ul></li>
 				</ul>
 
@@ -107,10 +105,21 @@
 								</div>
 							</li>
 							<li class="divider navbar-login-session-bg"></li>
-							<li><a href="change_password.jsp">Change password<span
+							<%
+								if (ac.getUsername().equals("admin")) {
+							%>
+							<li><a href="loan_request.jsp">Loan request<span
+									class="glyphicon glyphicon-list-alt pull-right"></span></a></li>
+							<%
+								} else {
+							%>
+							<li><a href="change_password.jsp">Change Password<span
 									class="glyphicon glyphicon-cog pull-right"></span></a></li>
+							<%
+								}
+							%>
 							<li class="divider"></li>
-							<li><a href="logout.jsp">Sign Out <span
+							<li><a href="logout.jsp">Sign Out<span
 									class="glyphicon glyphicon-log-out pull-right"></span></a></li>
 						</ul></li>
 				</ul>

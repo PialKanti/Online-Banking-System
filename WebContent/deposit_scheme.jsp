@@ -38,7 +38,7 @@
 							<span class="label label-success" style="font-size: 12px;">Short-term</span>
 						</p>
 						<ul>
-							<li>10 users</li>
+							<li>1 year</li>
 							<li>1, 3 or 5 lakh deposit amount</li>
 						</ul>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -49,7 +49,7 @@
 						<h3>Interest rate: 8%</h3>
 						<hr>
 						<p>
-							<a class="btn btn-success btn-large" href="#"><i class="icon-ok"></i>
+							<a class="btn btn-success btn-large" href="single_deposit_scheme.jsp?value=Bronze"><i class="icon-ok"></i>
 								Select plan</a>
 						</p>
 					</div>
@@ -61,7 +61,7 @@
 							<span class="label label-success" style="font-size: 12px;">Mid-term</span>
 						</p>
 						<ul>
-							<li>20 users</li>
+							<li>3 years</li>
 							<li>1, 3 or 5 lakh deposit amount</li>
 						</ul>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -72,7 +72,7 @@
 						<h3>Interest rate: 10%</h3>
 						<hr>
 						<p>
-							<a class="btn btn-success btn-large" href="#"><i
+							<a class="btn btn-success btn-large" href="single_deposit_scheme.jsp?value=Silver"><i
 								class="icon-ok"></i> Select plan</a>
 						</p>
 					</div>
@@ -84,7 +84,7 @@
 							<span class="label label-success" style="font-size: 12px;">Long-term</span>
 						</p>
 						<ul>
-							<li>10 users</li>
+							<li>5 years</li>
 							<li>1, 3 or 5 lakh deposit amount</li>
 						</ul>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -95,7 +95,7 @@
 						<h3>Interest rate: 12%</h3>
 						<hr>
 						<p>
-							<a class="btn btn-success btn-large" href="#"><i class="icon-ok"></i>
+							<a class="btn btn-success btn-large" href="single_deposit_scheme.jsp?value=Gold"><i class="icon-ok"></i>
 								Select plan</a>
 						</p>
 					</div>

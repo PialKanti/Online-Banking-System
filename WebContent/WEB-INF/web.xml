@@ -9,7 +9,6 @@
     <servlet-name>CreateAccount</servlet-name>
     <url-pattern>/CreateAccountServlet</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>Login</servlet-name>
     <servlet-class>com.green.bank.LoginServlet</servlet-class>
@@ -18,7 +17,6 @@
     <servlet-name>Login</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>Deposit</servlet-name>
     <servlet-class>com.green.bank.DepositServlet</servlet-class>
@@ -27,7 +25,6 @@
     <servlet-name>Deposit</servlet-name>
     <url-pattern>/DepositServlet</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>Withdraw</servlet-name>
     <servlet-class>com.green.bank.WithdrawServlet</servlet-class>
@@ -36,7 +33,6 @@
     <servlet-name>Withdraw</servlet-name>
     <url-pattern>/WithdrawServlet</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>Transfer</servlet-name>
     <servlet-class>com.green.bank.TransferServlet</servlet-class>
@@ -44,6 +40,23 @@
   <servlet-mapping>
     <servlet-name>Transfer</servlet-name>
     <url-pattern>/TransferServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DepositScheme</servlet-name>
+    <servlet-class>com.green.bank.DepositSchemeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DepositScheme</servlet-name>
+    <url-pattern>/DepositSchemeServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>Loan</servlet-name>
+    <servlet-class>com.green.bank.LoanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Loan</servlet-name>
+    <url-pattern>/LoanServlet</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>

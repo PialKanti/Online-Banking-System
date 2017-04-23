@@ -63,7 +63,7 @@
 						is a variety of saving plans which can be tailored to your needs,
 						including: Tax Exempt Savings Regular Savings.</p>
 					<div class="scheme-button col-md-4 col-md-offset-4">
-						<a type="button" class="btn btn-default btn-lg"
+						<a type="button" class="btn btn-default btn-lg" href="loan.jsp"
 							style="border-radius: 24px;">Learn more..</a>
 					</div>
 				</div>
